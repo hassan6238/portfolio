@@ -452,6 +452,11 @@ body {
   color: var(--green);
 }
 
+.pub-status.ready {
+  background: rgba(99, 102, 241, 0.12);
+  color: var(--accent-hover);
+}
+
 /* Contact */
 .section-contact { text-align: center; }
 
