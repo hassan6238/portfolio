@@ -352,6 +352,39 @@ body {
 
 .more-projects a:hover { text-decoration: underline; }
 
+.more-projects-wrap {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.more-projects-wrap summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text);
+  user-select: none;
+}
+
+.more-projects-wrap summary:hover { color: var(--accent); }
+
+.more-projects-list {
+  list-style: none;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.5rem;
+}
+
+.more-projects-list a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.more-projects-list a:hover { color: var(--accent); }
+
 /* Skills */
 .skills-grid {
   display: grid;

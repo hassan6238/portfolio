@@ -65,8 +65,9 @@
           </p>
           <p>
             My work spans deep learning hardware (GAN-based face unmasking, U-Net accelerators), post-quantum
-            cryptography (Kyber on FPGA), AES-GCM-SIV pipelined implementations, and comprehensive UVM-based
-            verification environments for RISC-V cores and AXI interfaces.
+            cryptography (Kyber on FPGA), AES-GCM-SIV pipelined implementations, unified
+            <strong>ASCON-128 + HDC secure edge AI processors</strong> with custom ISA extensions, and
+            comprehensive UVM-based verification environments for RISC-V cores and AXI interfaces.
           </p>
         </div>
         <div class="interest-tags">
@@ -154,6 +155,25 @@
         <p class="section-subtitle">Selected hardware design and verification work from GitHub</p>
         <div class="project-grid">
           <article class="project-card featured">
+            <div class="project-header">
+              <h3>Unified ASCON + HDC Secure Edge AI Processor</h3>
+              <span class="badge">Research · NUST SoC Lab</span>
+            </div>
+            <p>
+              Custom-instruction RISC-V fabric integrating <strong>Ascon-128 AEAD</strong> and
+              <strong>hyperdimensional inference</strong> on a shared 64-bit XOR/rotate datapath.
+              Firmware drives SBOX/DIFFUSE permutation loops (p[12] and p[6]), a single-cycle
+              <strong>HDC</strong> instruction (level + position encode, bind, bundle, classify), and a
+              full edge pipeline: decrypt sensor data → UCI HAR classify (D=384) → encrypt decision.
+              Verified with C reference drivers, Python ROM assembly, and QuestaSim against golden vectors;
+              mapped to <strong>Zynq-7020</strong> at 83&nbsp;MHz (timing met).
+            </p>
+            <div class="project-tags">
+              <span>SystemVerilog</span><span>RISC-V</span><span>ASCON-128</span><span>HDC</span><span>QuestaSim</span><span>Python</span><span>Vivado</span>
+            </div>
+          </article>
+
+          <article class="project-card">
             <div class="project-header">
               <h3>HDC Accelerator</h3>
               <span class="badge">Research · UQAC</span>
@@ -248,9 +268,38 @@
             </div>
             <a href="https://github.com/Hassaan6238/Matched-FIlter-on-FPGA" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
           </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <h3>AES Hardware Accelerator</h3>
+              <span class="badge">Crypto · NUST</span>
+            </div>
+            <p>Pipelined AES hardware supporting multiple modes, integrated with a RISC-V processor for secure embedded applications.</p>
+            <div class="project-tags">
+              <span>SystemVerilog</span><span>AES</span><span>RISC-V</span>
+            </div>
+            <a href="https://github.com/Hassaan6238/AES" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+          </article>
         </div>
+
+        <details class="more-projects-wrap">
+          <summary>More Projects</summary>
+          <ul class="more-projects-list">
+            <li><a href="https://github.com/hassan6238/FIFO-verification" target="_blank" rel="noopener">Sync FIFO Verification</a></li>
+            <li><a href="https://github.com/Hassaan6238/AXI-4-Lite-Verification" target="_blank" rel="noopener">AXI-4-Lite Verification</a></li>
+            <li><a href="https://github.com/Hassaan6238/Sort-Algo-SV" target="_blank" rel="noopener">Sort Algorithm (SystemVerilog)</a></li>
+            <li><a href="https://github.com/Hassaan6238/Bresenham-Circle-Drawing-Algorithm" target="_blank" rel="noopener">Bresenham Circle (VGA/FPGA)</a></li>
+            <li><a href="https://github.com/Hassaan6238/Vehicle-Detection-System" target="_blank" rel="noopener">Vehicle Detection System</a></li>
+            <li><a href="https://github.com/Hassaan6238/Reversing-lab" target="_blank" rel="noopener">Reverse Engineering Lab</a></li>
+            <li><a href="https://github.com/Hassaan6238/MPS-assignment" target="_blank" rel="noopener">4-bit Microprocessor Simulation</a></li>
+            <li><a href="https://github.com/Hassaan6238/FMCW-Radar" target="_blank" rel="noopener">FMCW Radar (Alt Implementation)</a></li>
+          </ul>
+        </details>
+
         <p class="more-projects">
-          <a href="https://github.com/hassan6238?tab=repositories" target="_blank" rel="noopener">See all repositories on GitHub →</a>
+          <a href="https://github.com/hassan6238?tab=repositories" target="_blank" rel="noopener">hassan6238 repos</a>
+          ·
+          <a href="https://github.com/Hassaan6238?tab=repositories" target="_blank" rel="noopener">Hassaan6238 repos</a>
         </p>
       </div>
     </section>
@@ -265,11 +314,11 @@
           </div>
           <div class="skill-group">
             <h3>Architectures</h3>
-            <p>RISC-V, Custom ISA Extensions, Pipelined Datapaths, HDC, SNN, DSP</p>
+            <p>RISC-V, Custom ISA Extensions, ASCON-128, Pipelined &amp; Multi-cycle Datapaths, HDC, SNN, DSP</p>
           </div>
           <div class="skill-group">
             <h3>Security &amp; Crypto</h3>
-            <p>AES (ECB/CTR/GCM/GCM-SIV), Post-Quantum Cryptography (Kyber), NTT</p>
+            <p>ASCON-128 (AEAD), AES (ECB/CTR/GCM/GCM-SIV), Post-Quantum Cryptography (Kyber), NTT</p>
           </div>
           <div class="skill-group">
             <h3>EDA Tools</h3>
